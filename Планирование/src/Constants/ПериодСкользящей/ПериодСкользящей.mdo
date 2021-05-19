@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6d072b1-52a1-4b32-8c7c-b918d58e1099">
+  <producedTypes>
+    <managerType typeId="546f07c5-89f4-48f3-a943-a90aa381b896" valueTypeId="b6bb8191-83bb-4d5f-b26f-11bcc913d423"/>
+    <valueManagerType typeId="34184fc6-b9d6-4692-843e-43f19ab219c0" valueTypeId="a2b27efa-6c52-4d45-9b9e-404db8cd057e"/>
+    <valueKeyType typeId="f54dfd80-0d7a-4479-961f-b338a96722bb" valueTypeId="b8aea90c-6098-4a17-9ffd-4168da80a0bd"/>
+  </producedTypes>
+  <name>ПериодСкользящей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Период скользящей</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

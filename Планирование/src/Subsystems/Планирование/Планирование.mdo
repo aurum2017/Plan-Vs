@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3dec69ba-2486-4496-9db6-20e21f4a7385">
+  <name>Планирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаПланирование</picture>
+  </picture>
+  <content>DataProcessor.ГрупповоеИзменениеРеквизитов</content>
+  <content>CommonPicture.ПодсистемаПланирование</content>
+  <subsystems>ТоварыИПотребители</subsystems>
+  <subsystems>Настройки</subsystems>
+  <subsystems>Данные</subsystems>
+</mdclass:Subsystem>

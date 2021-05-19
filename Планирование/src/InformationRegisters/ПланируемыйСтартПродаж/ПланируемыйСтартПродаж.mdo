@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59137914-90a1-46f4-b858-651cb8989bfe">
+  <producedTypes>
+    <selectionType typeId="bd09ddbc-aa65-4207-9f9f-8b823d605ea9" valueTypeId="6ba78dd8-bfb2-4fee-8442-9d318b811d15"/>
+    <listType typeId="1238eb4f-bb6b-43eb-89d8-233a09a22503" valueTypeId="b6eba7da-edad-450e-94b8-a8d806c530ca"/>
+    <managerType typeId="b86986b9-ec8b-4c2e-98d2-61dbcd3ad9ee" valueTypeId="82d4e500-603e-46a0-beca-48baa3d48c4b"/>
+    <recordSetType typeId="4f8bbdd5-8054-4d40-9599-466099100a2f" valueTypeId="7f70739d-40db-4622-bcb0-22db63bb0f6f"/>
+    <recordKeyType typeId="c750c1ea-1f97-431b-afa2-a3a5b16b5063" valueTypeId="4eff323f-acd9-4c6a-a770-53432628de85"/>
+    <recordType typeId="abf1a9e8-9acc-4060-b0b6-55dd4ebb2775" valueTypeId="6d6ec2c9-5dfe-4cb4-b31f-142abac20ab5"/>
+    <recordManagerType typeId="0f826673-1fec-42f6-bbff-e598d909643b" valueTypeId="7adfaf30-a269-4f75-918f-c0e2f82bffa0"/>
+  </producedTypes>
+  <name>ПланируемыйСтартПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планируемый старт продаж</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПланируемыйСтартПродаж.Form.ФормаСпискаОсновная</defaultListForm>
+  <auxiliaryListForm>InformationRegister.ПланируемыйСтартПродаж.Form.ФормаСписка</auxiliaryListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2edfb8df-5591-474e-917c-2c96cc1b0a4d">
+    <name>СреднемесячныеПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Среднемесячные продажи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="009ab1f8-db09-4653-80fe-67bd4f8a60b5">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1c2905bb-b843-46ba-aa00-ad51a0a30b10">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВИП</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="9970d511-5295-44b2-92c6-6f2673efb162">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ab529f5-2445-41ed-b367-498585970304">
+    <name>ФормаНабораЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма набора записей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ccdc706e-88fa-4da1-9765-013f3759eda6">
+    <name>ФормаСпискаОсновная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка основная</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="49ea3e9a-311d-4192-9212-3ea044bc174c">
+    <name>СтартПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старты продаж</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Номенклатура</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

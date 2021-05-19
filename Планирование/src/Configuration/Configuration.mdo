@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bded375-837e-4436-909d-05841963d0e3">
+  <name>ГодовыеПланыПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Годовые планы продаж</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="95e781aa-540f-4f94-8732-a2c16ab38fcd"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="921bf446-cd63-483d-9bb2-37fd82a94924"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="30776514-eea6-4a11-bfab-9a5f7fda7ee2"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="2c75f639-f2b9-42f8-8349-d373c9df2529"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="15e6b4de-c641-42bb-9bae-9a092c9b6727"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="169d4907-3db5-48a2-8471-53501aa935f9"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="ef622ba7-3bb5-4927-8455-b8d512e215ec"/>
+  <configurationExtensionCompatibilityMode>8.3.18</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <version>1.0 Beta</version>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <logo/>
+  <splash>
+    <transparentPixel>
+      <x>200</x>
+      <y>39</y>
+    </transparentPixel>
+  </splash>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.17</compatibilityMode>
+  <languages uuid="d17d9cfb-8e66-413e-89c5-bce08c4b4b2b">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.Планирование</subsystems>
+  <subsystems>Subsystem.Графики</subsystems>
+  <commonPictures>CommonPicture.ПодсистемаГрафики</commonPictures>
+  <commonPictures>CommonPicture.ПодсистемаПланирование</commonPictures>
+  <roles>Role.ПолныеПрава</roles>
+  <filterCriteria>FilterCriterion.СоставГруппыСезонности</filterCriteria>
+  <commonModules>CommonModule.ОбменДанными</commonModules>
+  <scheduledJobs>ScheduledJob.ОбменДанными</scheduledJobs>
+  <constants>Constant.ПериодСкользящей</constants>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
+  <catalogs>Catalog.ГруппыСезонности</catalogs>
+  <catalogs>Catalog.ПотенциалыРоста</catalogs>
+  <documents>Document.ПланПродаж</documents>
+  <enums>Enum.ВидПлана</enums>
+  <enums>Enum.ТипИсходныхДанных</enums>
+  <reports>Report.ГрафикиПродаж</reports>
+  <dataProcessors>DataProcessor.РаботаСГрафиками</dataProcessors>
+  <dataProcessors>DataProcessor.ГрупповоеИзменениеРеквизитов</dataProcessors>
+  <dataProcessors>DataProcessor.Сглаживание</dataProcessors>
+  <dataProcessors>DataProcessor.КонсольЗаданий</dataProcessors>
+  <dataProcessors>DataProcessor.Планы</dataProcessors>
+  <informationRegisters>InformationRegister.ДанныеПродаж</informationRegisters>
+  <informationRegisters>InformationRegister.ДанныеПродажДляПланирования</informationRegisters>
+  <informationRegisters>InformationRegister.КоэффициентыСезонности</informationRegisters>
+  <informationRegisters>InformationRegister.ПланируемыйСтартПродаж</informationRegisters>
+  <informationRegisters>InformationRegister.ПовышенияЦен</informationRegisters>
+  <informationRegisters>InformationRegister.ЛинейныйТрендГод</informationRegisters>
+</mdclass:Configuration>

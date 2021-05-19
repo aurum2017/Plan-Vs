@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef8f03d8-daa0-4037-a349-c9c26cc46110">
+  <producedTypes>
+    <selectionType typeId="a70b19be-ffbb-46ed-be61-742785cab914" valueTypeId="7288e5cf-6406-4580-8fb8-5df48b39435b"/>
+    <listType typeId="da793645-031c-41d9-9814-96c34a832756" valueTypeId="233829fd-7a45-4a05-9751-8d9c4f14d34a"/>
+    <managerType typeId="a2d73ccb-dc9d-4d85-b722-123e70de6d0c" valueTypeId="06963867-be7c-4241-b8c7-f3c877acbe48"/>
+    <recordSetType typeId="9e07cea6-4127-48c1-9336-d27f125f28b2" valueTypeId="08c44936-98df-44c7-9dc0-5bedcd64a6c0"/>
+    <recordKeyType typeId="381b5a98-6e8e-4c8c-9863-d1949f5302d9" valueTypeId="9aca2cbc-988e-471e-b4b4-c9448dd01cc1"/>
+    <recordType typeId="1354bb75-62b7-453b-82e9-6c1a35122992" valueTypeId="b9be0792-e74a-4f4e-9418-b47ff7cc388c"/>
+    <recordManagerType typeId="777cee01-cd4e-419d-84ba-77bc481e4d15" valueTypeId="572d5cae-d450-48eb-9871-0b171fa81dfb"/>
+  </producedTypes>
+  <name>ДанныеПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные продаж</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="26e786fe-313d-451a-8091-2e2c9c10c272">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="628a08a7-0574-4326-a0f8-fb61b183ddba">
+    <name>Выручка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выручка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c09187c8-ba6a-4c18-bfb5-b16ba0a84909">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="71b3a914-3e8c-497b-8455-ef0a15f9365a">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

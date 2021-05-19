@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e248c3a3-756f-4dbe-a68b-6127bf3a91dc">
+  <producedTypes>
+    <listType typeId="c70ede7e-df33-4f80-b121-979c5039c74e" valueTypeId="361af0c5-be4e-432e-8b97-47b04aa0f35b"/>
+    <managerType typeId="9cd1b0d9-846c-4cd7-b492-200b7b574675" valueTypeId="8795fca6-394b-4c77-ad2f-dfe2178bca2d"/>
+  </producedTypes>
+  <name>СоставГруппыСезонности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав группы сезонности</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ГруппыСезонности</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Catalog.Номенклатура.Attribute.ГруппаСезонности</content>
+  <defaultForm>FilterCriterion.СоставГруппыСезонности.Form.ФормаСписка</defaultForm>
+  <forms uuid="97f86070-9a64-41a3-90a8-37bca3529b69">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:FilterCriterion>

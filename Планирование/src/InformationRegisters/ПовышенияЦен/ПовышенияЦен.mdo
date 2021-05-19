@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0da89dac-6aa2-4d96-933c-89bbba68ed31">
+  <producedTypes>
+    <selectionType typeId="5711e891-82c1-4ef0-b08c-72fec41f9c45" valueTypeId="6f95e3d5-d831-46b7-a9f1-664ece15c554"/>
+    <listType typeId="4dc63cc0-00b0-4972-8980-b45a3ddffe50" valueTypeId="4d849abb-5424-4af1-a0e4-1dcc837783b1"/>
+    <managerType typeId="1b4b071f-de13-4ead-8bc1-a9a1ecf66d85" valueTypeId="5a5df031-3e64-4c51-9dc5-2726a2a14548"/>
+    <recordSetType typeId="08f7c83b-ff0c-40da-8bb0-acc6a4f89a1c" valueTypeId="4d8f900f-d650-4eef-9665-cc918693840b"/>
+    <recordKeyType typeId="8e347cd7-ab34-4e84-9437-d11ace273c1e" valueTypeId="5ba1897f-784d-4597-996e-63c12d770d6e"/>
+    <recordType typeId="3ab53a16-dd7b-4244-9985-e8e07f2ab4a8" valueTypeId="e7301226-a776-4b88-a597-74944efc023f"/>
+    <recordManagerType typeId="75986861-1979-4151-9fd2-28a6cedadec1" valueTypeId="ff57c130-c697-4d7d-8d56-bc4348aeb900"/>
+  </producedTypes>
+  <name>ПовышенияЦен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Повышения цен</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПовышенияЦен.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="517688b2-f7d7-4a30-b86a-fed1a88f203c">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="d7ebb5d9-324a-4585-83a0-3ae916c2e36f">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b1d09aec-71c7-4bac-9f3d-7c2c0a19ed05">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e6a6f838-353b-4cd4-b036-6585d3b0d774">
+    <name>ФормаНабораЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма набора записей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="7056f3d7-4bd7-48e2-bdb6-6b34201cae0d">
+    <name>ПовышенияЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повышения цен</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Номенклатура</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

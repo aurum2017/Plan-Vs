@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73cfd09b-4401-4708-9b4f-bdf0d3378fdd">
+  <producedTypes>
+    <selectionType typeId="b6315fd9-3fbf-4b10-8f57-2adcc1afb226" valueTypeId="10fefda4-9e5a-4fbe-960c-457803caee67"/>
+    <listType typeId="3cc089ec-14b6-47d8-b73c-ac52df75c1d7" valueTypeId="634ecf39-a7bf-4900-8a37-4ce58c007446"/>
+    <managerType typeId="243c1177-7929-47e9-b8a3-17dcf63518f5" valueTypeId="f3d341e0-4835-4be6-ac92-5802fa34d975"/>
+    <recordSetType typeId="72804a0f-b977-497b-aff3-d9bf8c12f9b3" valueTypeId="93a0126a-b631-4ad1-984d-5283c6c501a1"/>
+    <recordKeyType typeId="ee677745-903f-42e4-aef9-80dedd251870" valueTypeId="54a32ae2-3247-482c-882f-6a559a37f4fa"/>
+    <recordType typeId="82c369e2-90a2-4d0e-9659-0159dcf47f9b" valueTypeId="21155f8f-ec0a-442c-9a98-4103aa1ecc93"/>
+    <recordManagerType typeId="f0948f21-0c67-4530-b3c4-d07672051971" valueTypeId="9666b51d-df3b-4c80-a774-e5069dd576ff"/>
+  </producedTypes>
+  <name>КоэффициентыСезонности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициенты сезонности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c4bc462b-5cff-41ae-9c9b-440eb26ff730">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>12</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c0d530e4-8104-4908-a48d-971ed60ea887">
+    <name>ГруппаСезонности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа сезонности</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыСезонности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="112d8d38-11b1-4118-b8a8-95bc71169c50">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

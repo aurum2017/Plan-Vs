@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="717eed49-56f0-444e-94ad-992cc2e48f6b">
+  <producedTypes>
+    <objectType typeId="a59411c7-784f-4b9e-be9c-7d39ec18f858" valueTypeId="0283d472-3b40-4a30-80c3-821bd01cad67"/>
+    <managerType typeId="158cc970-3ce2-4045-9f14-228855c5f09e" valueTypeId="91c984dd-86b0-4d3a-991c-83f530eebbbe"/>
+  </producedTypes>
+  <name>Планы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Планы.Form.Форма</defaultForm>
+  <forms uuid="e851a3bf-0bb5-4b01-982f-cda282e519ec">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

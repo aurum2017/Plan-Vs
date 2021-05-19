@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25c3f057-af44-4c31-81e0-edff4ebd92f8">
+  <producedTypes>
+    <refType typeId="59595881-a386-4931-be53-803c8003e7a3" valueTypeId="6897dcff-7df0-49c6-8344-be47b8aa5208"/>
+    <listType typeId="64c7f51c-286c-435d-8f77-3a5783c9dc57" valueTypeId="bece37f6-6731-48eb-b1b1-1b30573fa589"/>
+    <managerType typeId="6ff76277-7af3-4c0b-9eee-13334c71bf51" valueTypeId="b8de9d4d-3b16-4d5b-bc42-9dd4c0b7e1c1"/>
+  </producedTypes>
+  <name>ТипИсходныхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип исходных данных</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4b027af1-da78-44bc-8771-42b14d9cefdf">
+    <name>Сглаженные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сглаженные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ca782793-be0c-4622-aaea-9ad2913bb7ff">
+    <name>БезИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без изменений</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
