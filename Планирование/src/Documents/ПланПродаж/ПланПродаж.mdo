@@ -23,16 +23,17 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПланПродаж.Form.ФормаДокумента</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="5122f8a5-bb29-45c8-b70a-6debac39063e">
-    <name>ВидПлана</name>
+    <name>ВидПланирования</name>
     <synonym>
       <key>ru</key>
-      <value>Вид плана</value>
+      <value>Вид планирования</value>
     </synonym>
     <type>
-      <types>EnumRef.ВидПлана</types>
+      <types>EnumRef.ВидыПланирования</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -91,6 +92,15 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="60791873-28e6-4b95-a2a3-0cec8ed40afa">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="3fa4b00d-1432-4bd8-8679-ae7574b4d74b">
     <producedTypes>
       <objectType typeId="2f405913-29d0-4e16-9640-9505cc50063b" valueTypeId="f4c5dc90-045b-4e20-8b05-6f5574f2f42e"/>
@@ -101,20 +111,6 @@
       <key>ru</key>
       <value>План</value>
     </synonym>
-    <attributes uuid="69252ffd-22d0-45ab-beac-23cc53f65fe7">
-      <name>Клиент</name>
-      <synonym>
-        <key>ru</key>
-        <value>Клиент</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.Партнеры</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
     <attributes uuid="d67e3f12-89a7-4947-848a-10ade7794fe4">
       <name>Период</name>
       <synonym>
@@ -126,6 +122,20 @@
         <dateQualifiers>
           <dateFractions>Date</dateFractions>
         </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="69252ffd-22d0-45ab-beac-23cc53f65fe7">
+      <name>Клиент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Клиент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Партнеры</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -147,10 +157,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="b7e51dd4-e2e2-42f1-ab89-762889e27814">
-      <name>Количество</name>
+      <name>Прогноз</name>
       <synonym>
         <key>ru</key>
-        <value>Количество</value>
+        <value>Прогноз</value>
       </synonym>
       <type>
         <types>Number</types>

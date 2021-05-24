@@ -27,13 +27,7 @@
     </functionality>
   </usedMobileApplicationFunctionalities>
   <defaultLanguage>Language.Русский</defaultLanguage>
-  <logo/>
-  <splash>
-    <transparentPixel>
-      <x>200</x>
-      <y>39</y>
-    </transparentPixel>
-  </splash>
+  <splash/>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -52,8 +46,12 @@
   <commonPictures>CommonPicture.ПодсистемаГрафики</commonPictures>
   <commonPictures>CommonPicture.ПодсистемаПланирование</commonPictures>
   <roles>Role.ПолныеПрава</roles>
+  <commonTemplates>CommonTemplate.СкользящиеСредние</commonTemplates>
   <filterCriteria>FilterCriterion.СоставГруппыСезонности</filterCriteria>
   <commonModules>CommonModule.ОбменДанными</commonModules>
+  <commonModules>CommonModule.СерверныеФункции</commonModules>
+  <commonModules>CommonModule.ТекстыЗапросов</commonModules>
+  <commonModules>CommonModule.ОбработкаДанных</commonModules>
   <scheduledJobs>ScheduledJob.ОбменДанными</scheduledJobs>
   <constants>Constant.ПериодСкользящей</constants>
   <catalogs>Catalog.Номенклатура</catalogs>
@@ -61,9 +59,10 @@
   <catalogs>Catalog.ГруппыСезонности</catalogs>
   <catalogs>Catalog.ПотенциалыРоста</catalogs>
   <documents>Document.ПланПродаж</documents>
-  <enums>Enum.ВидПлана</enums>
+  <enums>Enum.ВидыПланирования</enums>
   <enums>Enum.ТипИсходныхДанных</enums>
   <reports>Report.ГрафикиПродаж</reports>
+  <reports>Report.ПланФакт</reports>
   <dataProcessors>DataProcessor.РаботаСГрафиками</dataProcessors>
   <dataProcessors>DataProcessor.ГрупповоеИзменениеРеквизитов</dataProcessors>
   <dataProcessors>DataProcessor.Сглаживание</dataProcessors>
@@ -74,5 +73,5 @@
   <informationRegisters>InformationRegister.КоэффициентыСезонности</informationRegisters>
   <informationRegisters>InformationRegister.ПланируемыйСтартПродаж</informationRegisters>
   <informationRegisters>InformationRegister.ПовышенияЦен</informationRegisters>
-  <informationRegisters>InformationRegister.ЛинейныйТрендГод</informationRegisters>
+  <informationRegisters>InformationRegister.ЛинейныйТренд</informationRegisters>
 </mdclass:Configuration>
