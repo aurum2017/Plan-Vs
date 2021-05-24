@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f23b740-bab8-49fa-9608-83e2b2a1ce76">
+  <producedTypes>
+    <objectType typeId="9fb87b66-cc58-4f8b-ba3f-2919816f9b06" valueTypeId="dc9f3ffc-f982-4619-8c30-ce36770e7ed4"/>
+    <managerType typeId="671822fa-8b28-43bd-83de-25f03ac89d0f" valueTypeId="74e5560b-c4d6-451d-a798-158258325444"/>
+  </producedTypes>
+  <name>ПланФакт</name>
+  <synonym>
+    <key>ru</key>
+    <value>План факт</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПланФакт.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="ab14a914-52c5-4586-8bb9-84806736c384">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

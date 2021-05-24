@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="713a11d5-71cd-45e0-8d0f-63095e5e7de9">
+  <name>СкользящиеСредние</name>
+  <synonym>
+    <key>ru</key>
+    <value>Скользящие средние</value>
+  </synonym>
+  <templateType>DataCompositionSchema</templateType>
+</mdclass:CommonTemplate>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e75c3a9f-3f98-4702-b80b-3846a79d301a">
+  <producedTypes>
+    <selectionType typeId="2ed08ad3-c166-424f-8374-6dbdd65c9682" valueTypeId="08efcce1-d708-4043-81bc-8744807c3630"/>
+    <listType typeId="d75027b5-4cd8-4fbf-91b2-6a1e409ae0ff" valueTypeId="39745213-0c0f-402a-8c65-6eb6b70ceeb1"/>
+    <managerType typeId="35a0622d-31e1-4215-9386-36295935ad42" valueTypeId="008a116c-634f-4c90-9dac-2827b52ae1e2"/>
+    <recordSetType typeId="2a169390-0411-4fb3-b8fb-9149d3eea196" valueTypeId="cb769832-a118-4f6e-bbe0-3007b1df22d5"/>
+    <recordKeyType typeId="64488910-5aa9-4d0e-9509-e5a3d2aa10db" valueTypeId="66109d6f-323a-41cf-9181-9e8fc318e315"/>
+    <recordType typeId="5cc0a347-4064-405f-9852-fb522ba46efb" valueTypeId="d0499fcc-fb27-4727-9f38-329b7dae0288"/>
+    <recordManagerType typeId="73f82908-e4fb-4642-af9b-4cd53ca9a4d5" valueTypeId="07cd731c-aea1-4713-b7f9-203ec6c52769"/>
+  </producedTypes>
+  <name>ЛинейныйТренд</name>
+  <synonym>
+    <key>ru</key>
+    <value>Линейный тренд</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ЛинейныйТренд.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3fb4190b-0c31-4024-8e0c-58a015b28f4a">
+    <name>a</name>
+    <synonym>
+      <key>ru</key>
+      <value>A</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e3dfd540-be86-42a8-8e71-44f21ebffe7a">
+    <name>b</name>
+    <synonym>
+      <key>ru</key>
+      <value>B</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="46f858f1-13a2-4238-9ab0-6af9a1836800">
+    <name>Порядок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="80115e0c-8ecf-4821-8a30-a6872bae8237">
+    <name>LastSale</name>
+    <synonym>
+      <key>ru</key>
+      <value>Last sale</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="305df00d-e619-456c-b6a7-6db814664c31">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="561eae42-82d3-4099-a739-dbb6e33a7e2c">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f3236200-9a20-461d-be72-072c8ad5d097">
+    <name>СглаженныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сглаженные данные</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ed35d8af-3d49-4264-ba19-0bf843dab08a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
